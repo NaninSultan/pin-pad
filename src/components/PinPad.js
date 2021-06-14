@@ -81,7 +81,8 @@ const PinPad = () => {
             const timer = setTimeout(() => {
                 setLocked(0);
                 setType(type);
-                setPin("")
+                setPin("");
+                setAttempts(3);
             }, 1500)
             return () => clearTimeout(timer);
         }
